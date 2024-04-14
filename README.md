@@ -34,8 +34,8 @@ Isso iniciará a aplicação Spring Boot.
 
 A API oferece os seguintes endpoints:
 
-- `GET /todos`: Retorna a lista de todos os itens do TodoList.
-- `POST /todos`: Cria um novo item no TodoList.
+- `GET /http://localhost:8080/task`: Retorna a lista de todos os itens do TodoList.
+- `POST /http://localhost:8080/task`: Cria um novo item no TodoList.
 - `GET /todos/{id}`: Retorna um item específico do TodoList com o ID correspondente.
 - `PUT /todos/{id}`: Atualiza um item existente no TodoList com o ID correspondente.
 - `DELETE /todos/{id}`: Remove um item do TodoList com o ID correspondente.
