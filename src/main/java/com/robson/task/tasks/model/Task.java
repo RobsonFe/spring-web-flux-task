@@ -1,8 +1,11 @@
 package com.robson.task.tasks.model;
 
 import com.robson.task.tasks.service.TaskService;
+import org.springframework.data.annotation.Id;
 
 public class Task {
+    @Id
+    private String id;
     private String title;
     private String description;
     private int priority;
@@ -18,10 +21,10 @@ public class Task {
     public Task() {
     }
 
-    public Task newTask(Task task) {
-        TaskService.taskList.add(this);
-        return this;
-    }
+//    public Task newTask(Task task) {
+//        TaskService.taskList.add(this);
+//        return this;
+//    }
 
     public  Task insert(){
         return builderFrom(this)
