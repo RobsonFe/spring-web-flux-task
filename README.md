@@ -17,7 +17,7 @@ Antes de executar a aplicação, é necessário configurar o Kafka e o MongoDB. 
 
 ```properties
 spring.kafka.bootstrap-servers=localhost:9092
-spring.data.mongodb.uri=mongodb://localhost:27017/todolist
+spring.data.mongodb.uri=mongodb://localhost:27017/tasks
 ```
 
 ## Executando a Aplicação
