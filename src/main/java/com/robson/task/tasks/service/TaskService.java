@@ -7,6 +7,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
+import java.util.function.Function;
+
 @Service
 public class TaskService {
 
@@ -32,5 +34,9 @@ public class TaskService {
     private Mono<Task> save(Task task){
         return Mono.just(task)
                 .map(taskRepository::save);
+    }
+
+    public Mono<Void> deleteById(String id){
+        return Mono.fromRunnable(()-> taskRepository.deleteById(id));
     }
 }
